@@ -1,0 +1,26 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{KCD{\etalchar{+}}68}
+
+\bibitem[Bea85]{Bear:1985fj}
+Greg Bear.
+\newblock {\em Eon}.
+\newblock Bluejay Books, New York, N.Y., a bluejay international ed edition,
+  1985.
+
+\bibitem[KCD{\etalchar{+}}68]{Kubrick:1968ve}
+Stanley Kubrick, Arthur~C Clarke, Keir Dullea, Gary Lockwood, and William
+  Sylvester.
+\newblock {\em 2001, a space odyssey}.
+\newblock Metro-Goldwyn-Mayer, United States, 1968.
+
+\bibitem[Niv77]{Niven:1977rz}
+Larry Niven.
+\newblock {\em Ringworld: a novel}.
+\newblock Holt, Rinehart and Winston, New York, 1977.
+
+\bibitem[Str93]{:1993dq}
+J.~Michael Straczynski.
+\newblock {\em Babylon 5}.
+\newblock 1993.
+
+\end{thebibliography}

@@ -1,0 +1,38 @@
+/**/
+load("unit");
+load(ezunits);
+/*
+ * Define the various constants needed
+ */
+/* g: 0.001`kg;
+ * J: kg*m/s^2;
+ * A0: 9.8`m/s^2;
+ * P1: 101.325`kPa;
+ * T: 293.15`K;
+ * Mair: 29`g/mol;
+ * R: 8.314472`J/K*mol;
+ * k: (Mair*A0)/(R1*R*T);
+ */
+A0: 9.8;
+P1: 101.325;
+T: 293.15;
+Mair: 0.029;
+R: 8.314472;
+k: Mair*A0/R1*R*T;
+/*
+ * Now, the basic formulas
+ */
+diffeq: 'diff(p, r) = k*p*r;
+press: ode2(diffeq, p, r);
+specific: ic1(press, r=R1, p=P1);
+/*
+ * Formula definition in Maxima
+ */
+p(r1,r) := 101.325*exp(5.83e-5*(r^2-r1^2)/r1);
+/*
+ * Plots
+ */
+contour_plot(p(r1,r*r1/100), [r1, 100, 10000], [r, 0, 100], [xlabel, "Radius of Station (meters)"], [ylabel, "Percent of Distance from Axis"], [gnuplot_term, ps], [gnuplot_out_file, "fig1.ps"]);
+/**/
+plot2d(p(r1, 0), [r1, 100, 10000], [logy], [xlabel, "Radius of Station (meters)"], [ylabel, "Airpressure (kPa)"], [gnuplot_term, ps], [gnuplot_out_file, "fig2.ps"]);
+plot3d(p(r1,r*r1/100), [r1, 100, 10000], [r, 0, 100]);

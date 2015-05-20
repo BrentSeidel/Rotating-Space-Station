@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: AirPressure.aux
+The style file: alpha.bst
+Database file #1: Bibleography.bib
+Warning--empty publisher in :1993dq
+You've used 4 entries,
+            2543 wiz_defined-function locations,
+            584 strings with 4860 characters,
+and the built_in function-call counts, 1282 in all, are:
+= -- 108
+> -- 59
+< -- 3
++ -- 19
+- -- 19
+* -- 82
+:= -- 232
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 21
+chr.to.int$ -- 4
+cite$ -- 5
+duplicate$ -- 63
+empty$ -- 101
+format.name$ -- 25
+if$ -- 252
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 24
+num.names$ -- 12
+pop$ -- 36
+preamble$ -- 1
+purify$ -- 28
+quote$ -- 0
+skip$ -- 38
+stack$ -- 0
+substring$ -- 28
+swap$ -- 4
+text.length$ -- 3
+text.prefix$ -- 3
+top$ -- 0
+type$ -- 16
+warning$ -- 1
+while$ -- 9
+width$ -- 7
+write$ -- 54
+(There was 1 warning)
